@@ -28,6 +28,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         context = CIContext()
         currentFilter = CIFilter(name: "CISepiaTone")
+        currentFilter.setValue(intensity.value, forKey: kCIInputIntensityKey)
     }
     
     
